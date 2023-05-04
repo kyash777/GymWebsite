@@ -22,6 +22,8 @@ mongodb.connect(" mongodb+srv://Yash_Kshatriya:Yash%402001@cluster0.190ukfp.mong
   }
 });
 
+app.use(express.static('./dist/ProjectGym'));
+
 
 app.use((req, res, next) => {             // middleware common for all the paths
 
