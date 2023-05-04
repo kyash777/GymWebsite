@@ -3,6 +3,8 @@ const app =require("./backend/app");
 
 const server =http.createServer(app);
 
-server.listen(3000, ()=>{
+var PORT=process.env.PORT;
+
+server.listen(PORT || 3000, ()=>{
     console.log("check 3000");
 });
